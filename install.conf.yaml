@@ -13,6 +13,7 @@
     ~/.config/polybar: polybar
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
+    ~/.config/wall: wall
     ~/.zshrc:  zsh/zshrc
 
 - shell:
