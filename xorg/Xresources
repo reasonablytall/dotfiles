@@ -1,0 +1,61 @@
+! XFT DPI and Antialiasing
+Xft.dpi: 115
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+
+! Rofi Settings
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+
+rofi.fake-transparency: true
+rofi.font: Iosevka Term Slab 12
+rofi.columns: 2
+rofi.hide-scrollbar: true
+rofi.padding: 6
+rofi.width: 500
+rofi.lines: 30
+rofi.terminal: /usr/bin/kitty
+
+# Ayu Theme Port
+! special
+*.foreground:   #d9d7ce
+*.background:   #212733
+*.cursorColor:  #d9d7ce
+
+! black
+*.color0:       #272d38
+*.color8:       #738699
+
+! red
+*.color1:       #ff3333
+*.color9:       #f51818
+
+! green
+*.color2:       #bae67e
+*.color10:      #c1e436
+
+! yellow
+*.color3:       #ffcc66
+*.color11:      #ffa759
+
+! blue
+*.color4:       #73d0ff
+*.color12:      #2c80ff
+
+! magenta
+*.color5:       #d4bfff
+*.color13:      #a750ff
+
+! cyan
+*.color6:       #95e6cb
+*.color14:      #2cffb2
+
+! white
+*.color7:       #bbbbbb
+*.color15:      #ffffff

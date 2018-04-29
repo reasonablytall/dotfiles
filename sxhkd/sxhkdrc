@@ -1,0 +1,103 @@
+# Reload XRDB
+super + ctrl + r
+	xrdb merge ~/.Xresources
+
+# Reload configuration
+super + shift + r
+	pkill -USR1 -x sxhkd
+
+#
+# bspwm hotkeys
+#
+
+# Kill WM
+super + Escape
+	pkill bspwm
+
+# Power off
+super + shift + Escape
+	systemctl poweroff
+
+# Lock screen
+ctrl + alt + l
+	betterlockscreen -l blur
+
+# Close window
+super + w
+	bspc node focused -c
+
+# Kill window
+super + shift + w
+	bspc node focused -k
+
+# Change desktop
+super + {1-9,0}
+	bspc desktop focused:^{1-9,0} -f
+
+super + Tab
+	bspc desktop last -f
+
+# Focus nodes
+super + {h, j, k, l}
+	bspc node {west, south, north, east} -f
+
+# Move nodes
+super + shift + {h, j, k, l}
+	bspc node focused -s {west, south, north, east}
+
+# Resize nodes
+super + ctrl + {h, j, k, l}
+	bspc node focused -z {right -20 0, bottom 0 20, bottom 0 -20, right 20 0}
+
+# Move nodes between desktops
+super + shift + {1-9, 0}
+	bspc node focused -d ^{1-9, 0}
+
+# Rotate nodes
+super + i
+	bspc node -f @parent; bspc node -R 90; bspc node -f last
+
+# Focus node under pointer
+~button1
+	bspc node pointed -f
+
+# Change node state
+super + {s,m,t}
+	bspc node focused -t '~{floating,fullscreen,tiled}'
+
+# Move current window to largest space
+super + shift + Return
+	bspc node focused -s biggest
+
+# Brightness
+{XF86MonBrightnessDown, XF86MonBrightnessUp}
+	light -{U,A} 10
+
+shift + {XF86MonBrightnessDown, XF86MonBrightnessUp}
+	light -{U,A} 1
+
+# Audio
+{XF86AudioLowerVolume, XF86AudioRaiseVolume, XF86AudioMute}
+	pulseaudio-ctl {down, up, mute}
+
+shift + {XF86AudioLowerVolume, XF86AudioRaiseVolume}
+	pulseaudio-ctl {down 1, up 1}
+
+
+#
+# Application hotkeys
+#
+
+# Open terminal
+super + Return 
+	kitty
+
+# Open rofi
+super + space
+	rofi -show run
+
+# Take Screenshot
+@super + q
+	cd /home/alex/Images/Screenshots; LATESTSCROT="area_$(date -Is).png"; gnome-screenshot -a -f $LATESTSCROT; xclip -selection c -t image/png -i < $LATESTSCROT
+
+

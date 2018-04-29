@@ -1,0 +1,31 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -v
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/alex/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# Alex's Configuration
+source ~/.antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle pip
+antigen bundle command-not-found
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen theme half-life
+antigen apply
+
+alias ls='ls --color=auto --group-directories-first'
+alias ll='ls -al'
+alias gs='git status'
+alias vim='nvim'
+
+bindkey '^K' up-line-or-search
+bindkey '^J' down-line-or-search
+

@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      relink: true
+      create: true
+
+- clean: ['~']
+
+- link:
+    ~/.xinitrc: xorg/xinitrc
+    ~/.Xresources: xorg/Xresources
+    ~/.config/bspwm: bspwm
+    ~/.config/sxhkd: sxhkd
+    ~/.config/polybar: polybar
+    ~/.config/kitty: kitty
+    ~/.config/nvim: nvim
+    ~/.zshrc:  zsh/zshrc
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+  - [curl -L git.io/antigen > ~/.antigen.zsh, Installing antigen]
