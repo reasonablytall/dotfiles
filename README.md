@@ -2,4 +2,5 @@
 My (Arch) Linux dotfiles
 
 ## Example
-![Example Image](https://github.com/A-lxe/dotfiles/blob/master/screenshots/example.png)
+![Clean Example](https://github.com/A-lxe/dotfiles/blob/master/screenshots/clean.png)
+![Working Example](https://github.com/A-lxe/dotfiles/blob/master/screenshots/working.png)

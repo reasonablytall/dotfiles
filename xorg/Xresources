@@ -1,5 +1,5 @@
 ! XFT DPI and Antialiasing
-Xft.dpi: 115
+Xft.dpi: 96
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintfull
@@ -22,7 +22,7 @@ rofi.width: 500
 rofi.lines: 30
 rofi.terminal: /usr/bin/kitty
 
-# Ayu Theme Port
+! Ayu Theme Port
 ! special
 *.foreground:   #d9d7ce
 *.background:   #212733
