@@ -14,13 +14,9 @@ super + shift + r
 super + Escape
 	pkill bspwm
 
-# Power off
-super + shift + Escape
-	systemctl poweroff
-
 # Lock screen
 ctrl + alt + l
-	betterlockscreen -l blur
+	betterlockscreen -l
 
 # Close window
 super + w

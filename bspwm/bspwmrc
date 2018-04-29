@@ -19,8 +19,9 @@ xrandr --newmode 1920x1080  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hs
 xrandr --addmode eDP-1 1920x1080
 xrandr --output eDP-1 --mode 1920x1080
 
-sxhkd -r ~/.sxhkdlog &
+sxhkd -r &
 compton &
-betterlockscreen -u ~/.config/wall/wall.png && betterlockscreen -w &
+betterlockscreen -w dim &
+(betterlockscreen -u ~/.config/wall/wall.*; betterlockscreen -w dim) &
 ~/.config/polybar/run.sh &
-dex -a
+dex -a &
