@@ -1,3 +1,5 @@
+# vi: ft=dosini
+
 ;=====================================================
 ;
 ;   To learn more about how to configure Polybar
@@ -51,7 +53,8 @@ scroll-down = bspwm-deskprev
 module-margin-left = 2
 module-margin-right = 0
 
-font-0 = nerdypepper scientifica:style=Regular;2
+font-0 = xos4 Terminus:style=Bold:pixelsize=12;2
+;font-0 = nerdypepper scientifica:style=Regular;2
 font-1 = Wuncon Siji:style=Regular;2
 
 modules-left = powermenu bspwm xwindow
@@ -160,7 +163,7 @@ ramp-capacity-background = ${colors.battery}
 animation-charging-background = ${colors.battery}
 
 [module/volume]
-type = internal/alsa
+type = internal/pulseaudio
 
 format-volume = "<ramp-volume><label-volume>"
 format-muted = "<bar-volume><label-muted>"
