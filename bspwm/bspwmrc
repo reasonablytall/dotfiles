@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc monitor -d 0 I II III IV V VI VII VIII IX
+bspc monitor -d I II III IV V VI VII VIII IX
 
 bspc config top_padding 20
 bspc config border_width 2
@@ -15,7 +15,7 @@ bspc config gapless_monocle true
 
 bspc config pointer_modifier shift
 bspc config pointer_action1 move
-bspc config pointer_action1 resize_side
+bspc config pointer_action2 resize_side
 
 bspc rule -a zathura state=tiled
 
@@ -23,8 +23,8 @@ xrandr --newmode 1920x1080 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync
 xrandr --addmode eDP-1 1920x1080
 xrandr --output eDP-1 --mode 1920x1080
 
-sxhkd -r &
 compton &
+sxhkd -r &
 betterlockscreen -w dim &
 ~/.config/polybar/run.sh &
 dex -a &

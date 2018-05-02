@@ -65,10 +65,10 @@ modules-right = wlan volume battery date
 [module/powermenu]
 type = custom/menu
 format-foreground = ${colors.background}
-label-open = "  "
+label-open = "  "
 label-open-font = 2
 label-open-background = ${colors.alert}
-label-close = "  "
+label-close = "  "
 label-close-background = ${colors.alert}
 label-separator = " "
 
