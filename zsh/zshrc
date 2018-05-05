@@ -21,6 +21,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme half-life
 antigen apply
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 alias ls='ls --color=auto --group-directories-first'
 alias ll='ls -al'
 alias gs='git status'

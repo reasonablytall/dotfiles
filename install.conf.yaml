@@ -8,13 +8,14 @@
 - link:
     ~/.xinitrc: xorg/xinitrc
     ~/.Xresources: xorg/Xresources
+    ~/.zshrc:  zsh/zshrc
+    ~/.config/compton.conf: compton/compton.conf
     ~/.config/bspwm: bspwm
     ~/.config/sxhkd: sxhkd
     ~/.config/polybar: polybar
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.config/wall: wall
-    ~/.zshrc:  zsh/zshrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

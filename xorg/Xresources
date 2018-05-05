@@ -7,20 +7,33 @@ Xft.hinting: 1
 Xft.antialias: 1
 
 ! Rofi Settings
-rofi.color-enabled: true
-rofi.color-window: #273238, #273238, #1e2529
-rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
-rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
-rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844
+rofi.location: 1
+rofi.xoffset: 10
+rofi.yoffset: 30
+rofi.sidebar-mode: true
 
+rofi.color-enabled: true
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: #d9d7ce,  #212733,  #d9d7ce,  #ff6a00, #d9d7ce
+rofi.color-urgent: #d9d7ce,  #212733,  #d9d7ce,  #ff6a00, #d9d7ce
+rofi.color-active: #d9d7ce,  #212733,  #d9d7ce,  #ff6a00, #d9d7ce
+
+!                  'background', 'border', 'separator'
+rofi.color-window: #d9d7ce,      #002b36,  #002b3600
+
+rofi.bw: 0
+rofi.modi: run,window,ssh
 rofi.fake-transparency: true
-rofi.font: Iosevka Term Slab 12
-rofi.columns: 2
+rofi.font: xos4 Terminus 9
+rofi.columns: 4
 rofi.hide-scrollbar: true
-rofi.padding: 6
-rofi.width: 500
-rofi.lines: 30
+rofi.padding: 5
+rofi.width: 945
+rofi.lines: 10
 rofi.terminal: /usr/bin/kitty
+rofi.ssh-command: {terminal} {ssh-client} {host}
+rofi.run-command: {cmd}
+rofi.run-shell-command: {terminal} {cmd}
 
 ! Ayu Theme Port
 ! special
