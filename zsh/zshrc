@@ -25,7 +25,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -al'
+alias ll='ls -hal'
 alias gs='git status'
 alias vim='nvim'
 

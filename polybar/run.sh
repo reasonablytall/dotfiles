@@ -1,3 +1,3 @@
 #!/bin/sh
-pkill polybar
+killall polybar
 polybar top &

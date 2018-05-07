@@ -13,7 +13,7 @@ bspc config split_ratio 0.5
 bspc config borderless_monocle true
 bspc config gapless_monocle true
 
-bspc config pointer_modifier shift
+bspc config pointer_modifier mod4
 bspc config pointer_action1 move
 bspc config pointer_action2 resize_side
 
@@ -24,7 +24,7 @@ xrandr --addmode eDP-1 1920x1080
 xrandr --output eDP-1 --mode 1920x1080
 
 compton -b
-sxhkd -r &
+sxhkd &
 betterlockscreen -w dim &
 ~/.config/polybar/run.sh &
 dex -a &
