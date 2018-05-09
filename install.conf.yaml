@@ -8,7 +8,7 @@
 - link:
     ~/.xinitrc: xorg/xinitrc
     ~/.Xresources: xorg/Xresources
-    ~/.zshrc:  zsh/zshrc
+    ~/.zshrc: zsh/zshrc
     ~/.config/compton.conf: compton/compton.conf
     ~/.config/bspwm: bspwm
     ~/.config/sxhkd: sxhkd
@@ -16,7 +16,9 @@
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.config/wall: wall
+    ~/.config/mpd: mpd
+    ~/.config/ncmpcpp: ncmpcpp
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [curl -L git.io/antigen > ~/.antigen.zsh, Installing antigen]
+  - [curl -L git.io/antigen -o ~/.antigen.zsh, Installing antigen]
