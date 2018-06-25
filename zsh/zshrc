@@ -12,6 +12,9 @@ compinit
 # End of lines added by compinstall
 
 # Alex's Configuration
+if [ ! -f ~/.antigen.zsh ]; then
+  curl -L https://git.io/antigen -o ~/.antigen.zsh
+fi
 source ~/.antigen.zsh
 antigen use oh-my-zsh
 antigen bundle git
@@ -29,6 +32,10 @@ alias ll='ls -hal'
 alias gs='git status'
 alias vim='nvim'
 
-bindkey '^K' up-line-or-search
-bindkey '^J' down-line-or-search
+bindkey '^K' up-line-or-beginning-search
+bindkey '^J' down-line-or-beginning-search
 
+# Load local machine configuration
+if [ -f ~/.zshrc_local ]; then
+  source ~/.zshrc_local
+fi
