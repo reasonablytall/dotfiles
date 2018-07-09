@@ -12,13 +12,21 @@ call plug#begin('~/.vim/plugged')
 
 " Completion Plugins:
 if !exists('g:gui_oni')
-  Plug 'prabirshrestha/asyncomplete.vim'
-  Plug 'prabirshrestha/async.vim'
-  Plug 'prabirshrestha/vim-lsp'
-  Plug 'prabirshrestha/asyncomplete-lsp.vim'
+  Plug 'autozimu/LanguageClient-neovim', {
+        \ 'branch': 'next',
+        \ 'do': 'bash install.sh',
+        \ }
+
+  if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+  endif
+
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
-  Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 endif
 
 " Other Plugins:

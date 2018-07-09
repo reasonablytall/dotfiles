@@ -2,7 +2,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
-bindkey -v
+
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/alex/.zshrc'
@@ -35,6 +35,7 @@ alias vim='nvim'
 bindkey '^K' up-line-or-beginning-search
 bindkey '^J' down-line-or-beginning-search
 
+bindkey -v
 # Load local machine configuration
 if [ -f ~/.zshrc_local ]; then
   source ~/.zshrc_local

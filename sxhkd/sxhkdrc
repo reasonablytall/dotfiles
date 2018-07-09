@@ -93,6 +93,9 @@ super + space
 	rofi -show run
 
 # Take Screenshot
+Print
+	cd /home/alex/Images/Screenshots; LATESTSCROT="screen_$(date -Is).png"; scrot $LATESTSCROT; xclip -selection c -t image/png -i < $LATESTSCROT
+
 @super + q
 	cd /home/alex/Images/Screenshots; LATESTSCROT="area_$(date -Is).png"; gnome-screenshot -a -f $LATESTSCROT; xclip -selection c -t image/png -i < $LATESTSCROT
 
