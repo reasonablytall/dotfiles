@@ -24,18 +24,18 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme half-life
 antigen apply
 
-export EDITOR=nvim
-export VISUAL=nvim
-
-alias ls='ls --color=auto --group-directories-first'
-alias ll='ls -hal'
-alias gs='git status'
-alias vim='nvim'
-
+bindkey -v
 bindkey '^K' up-line-or-beginning-search
 bindkey '^J' down-line-or-beginning-search
 
-bindkey -v
+alias ls='ls --color=auto --group-directories-first'
+alias ll='ls -hal'
+alias l='ls -hl'
+alias gs='git status'
+alias vim='nvim'
+alias startx='ssh-agent startx'
+alias pip='echo "Nuh uh!"'
+
 # Load local machine configuration
 if [ -f ~/.zshrc_local ]; then
   source ~/.zshrc_local

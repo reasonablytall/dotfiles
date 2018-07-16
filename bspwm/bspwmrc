@@ -20,10 +20,10 @@ bspc config pointer_action2 resize_side
 bspc rule -a zathura state=tiled
 
 xrandr --newmode 1920x1080 173.00 1920 2048 2248 2576 1080 1083 1088 1120 -hsync +vsync
-xrandr --addmode eDP-1 1920x1080
-xrandr --output eDP-1 --mode 1920x1080
+xrandr --addmode eDP1 1920x1080
+xrandr --output eDP1 --mode 1920x1080
 
-compton -b
+compton -b &
 sxhkd &
 betterlockscreen -w dim &
 ~/.config/polybar/run.sh &

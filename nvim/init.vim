@@ -81,6 +81,7 @@ set hlsearch
 set incsearch
 map <C-_> <leader>c<space>
 set updatetime=100
+tnoremap <Esc> <C-\><C-n>
 
 " spacing settings
 set tabstop=2
