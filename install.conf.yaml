@@ -6,7 +6,6 @@
 - clean: ['~']
 
 - link:
-    ~/.zprofile: profile/zprofile
     ~/.xinitrc: xorg/xinitrc
     ~/.Xresources: xorg/Xresources
     ~/.zshrc: zsh/zshrc
