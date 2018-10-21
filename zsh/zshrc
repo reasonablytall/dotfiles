@@ -35,6 +35,7 @@ alias gs='git status'
 alias vim='nvim'
 alias startx='ssh-agent startx'
 alias pip='echo "Nuh uh!"'
+alias clip='xclip -selection c'
 
 # Load local machine configuration
 if [ -f ~/.zshrc_local ]; then

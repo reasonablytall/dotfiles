@@ -1,0 +1,49 @@
+{
+    "workbench.colorTheme": "Ayu Mirage",
+    "latex-workshop.view.pdf.viewer": "tab",
+    "editor.wordWrap": "on",
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', 'monospace'",
+    "window.zoomLevel": 0,
+    "explorer.confirmDelete": false,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "vim.autoindent": false,
+    "vim.statusBarColorControl": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f",
+        "statusBar.foreground": "#ddd"
+    },
+    "vim.easymotion": true,
+    "vim.leader": "<space>",
+    "vim.easymotionMarkerFontFamily": "Fira Code",
+    "vim.easymotionMarkerFontWeight": "bold",
+    "vim.easymotionMarkerYOffset": 5,
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "vim.hlsearch": true,
+    "vim.statusBarColors.insert": ["#5f0000", "#ddd"],
+    "vim.statusBarColors.normal": ["#005f5f", "#ddd"],
+    "vim.statusBarColors.replace": ["#00000", "#ddd"],
+    "vim.statusBarColors.visual": ["#5f00af", "#ddd"],
+    "vim.statusBarColors.visualblock": ["#86592d", "#ddd"],
+    "vim.statusBarColors.visualline": [
+        "#005f5f",
+        "#ddd"
+    ],
+    "python.formatting.provider": "yapf",
+    "python.linting.pylintPath": "/usr/bin/pylint",
+    "python.formatting.yapfPath": "/usr/bin/yapf",
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "editor.rulers": [
+        80
+    ],
+    "latex-workshop.message.update.show": false,
+    "explorer.confirmDragAndDrop": false,
+    "spellright.language": [
+        "en_US"
+    ],
+    "spellright.configurationScope": "user",
+}

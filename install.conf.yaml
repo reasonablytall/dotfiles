@@ -18,6 +18,8 @@
     ~/.config/wall: wall
     ~/.config/mpd: mpd
     ~/.config/ncmpcpp: ncmpcpp
+    ~/.config/dunst: dunst
+    ~/.config/Code/User: vscode
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

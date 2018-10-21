@@ -43,6 +43,8 @@ endif
 
 Plug 'ayu-theme/ayu-vim'
 Plug 'chiel92/vim-autoformat'
+Plug 'prettier/vim-prettier'
+Plug 'alvan/vim-closetag'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'easymotion/vim-easymotion'
 Plug 'junegunn/goyo.vim'
@@ -82,6 +84,9 @@ set incsearch
 map <C-_> <leader>c<space>
 set updatetime=100
 tnoremap <Esc> <C-\><C-n>
+
+" ctrlp settings
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 
 " spacing settings
 set tabstop=2
