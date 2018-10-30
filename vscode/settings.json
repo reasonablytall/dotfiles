@@ -46,4 +46,9 @@
         "en_US"
     ],
     "spellright.configurationScope": "user",
+    "editor.tabSize": 2,
+    "spellright.documentTypes": [
+        "latex",
+        "plaintext"
+    ],
 }
