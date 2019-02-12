@@ -11,23 +11,23 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Completion Plugins:
-if !exists('g:gui_oni')
-  Plug 'autozimu/LanguageClient-neovim', {
-        \ 'branch': 'next',
-        \ 'do': 'bash install.sh',
-        \ }
-
-  if has('nvim')
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  else
-    Plug 'Shougo/deoplete.nvim'
-    Plug 'roxma/nvim-yarp'
-    Plug 'roxma/vim-hug-neovim-rpc'
-  endif
-
-  Plug 'SirVer/ultisnips'
-  Plug 'honza/vim-snippets'
-endif
+" if !exists('g:gui_oni')
+"   Plug 'autozimu/LanguageClient-neovim', {
+"         \ 'branch': 'next',
+"         \ 'do': 'bash install.sh',
+"         \ }
+" 
+"   if has('nvim')
+"     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"   else
+"     Plug 'Shougo/deoplete.nvim'
+"     Plug 'roxma/nvim-yarp'
+"     Plug 'roxma/vim-hug-neovim-rpc'
+"   endif
+" 
+"   Plug 'SirVer/ultisnips'
+"   Plug 'honza/vim-snippets'
+" endif
 
 " Other Plugins:
 if !exists('g:gui_oni')
@@ -62,16 +62,15 @@ Plug 'zhou13/vim-easyescape'
 
 call plug#end()
 
-if !exists('g:gui_oni')
-  source $HOME/.config/nvim/completion.vim
-endif
+"if !exists('g:gui_oni')
+"  source $HOME/.config/nvim/completion.vim
+"endif
 
 set termguicolors
 let &t_8f = "\e[38;2;%lu;%lu;%lum"
 let &t_8b = "\e[48;2;%lu;%lu;%lum"
 let &t_ut=''
 
-set termguicolors       " enable true colors support
 "let ayucolor="light"   " for light version of theme
 let ayucolor="mirage"   " for mirage version of theme
 "let ayucolor="dark"    " for dark version of theme

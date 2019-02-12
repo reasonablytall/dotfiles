@@ -9,6 +9,7 @@
     ~/.xinitrc: xorg/xinitrc
     ~/.Xresources: xorg/Xresources
     ~/.zshrc: zsh/zshrc
+    ~/.tmux.conf: tmux/tmux.conf
     ~/.config/compton.conf: compton/compton.conf
     ~/.config/bspwm: bspwm
     ~/.config/sxhkd: sxhkd
