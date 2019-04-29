@@ -11,17 +11,28 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Alex's Configuration
-if [ ! -f ~/.antigen.zsh ]; then
-  curl -L https://git.io/antigen -o ~/.antigen.zsh
+# Alex's Configuration ------------------------------------
+
+# Allow user-level npm global installs
+PATH="$HOME/.node_modules/bin:$PATH"
+export npm_config_prefix=~/.node_modules
+
+# Install antigen if it doesn't exist
+local antigen_path="$HOME/antigen.zsh"
+if [ ! -f "$antigen_path" ]; then
+  curl -L https://git.io/antigen -o "$antigen_path"
 fi
-source ~/.antigen.zsh
+source $antigen_path
+
 antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle command-not-found
-antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle aws
+antigen bundle docker
+antigen bundle docker-compose
 antigen theme half-life
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 bindkey -v
@@ -35,7 +46,10 @@ alias gs='git status'
 alias vim='nvim'
 alias startx='ssh-agent startx'
 alias pip='echo "Nuh uh!"'
+alias supip=/usr/bin/pip
 alias clip='xclip -selection c'
+alias yay='yay --color=always'
+alias fehlast="find ~/Images/Screenshots | sort | tail -n 1 | xargs feh"
 
 # Load local machine configuration
 if [ -f ~/.zshrc_local ]; then

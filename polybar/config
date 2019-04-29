@@ -56,7 +56,7 @@ module-margin-right = 0
 
 font-0 = xos4 Terminus:style=Bold:pixelsize=12;2
 ;font-0 = nerdypepper scientifica:style=Regular;2
-font-1 = Wuncon Siji:style=Regular;2
+font-1 = Siji:style=Regular;2
 
 modules-left = powermenu bspwm xwindow
 modules-center =

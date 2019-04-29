@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.wordWrap": "on",
     "editor.fontLigatures": true,
@@ -33,7 +33,7 @@
         "#005f5f",
         "#ddd"
     ],
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "black",
     "python.linting.pylintPath": "/usr/bin/pylint",
     "python.formatting.yapfPath": "/usr/bin/yapf",
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
@@ -48,7 +48,13 @@
     "spellright.configurationScope": "user",
     "editor.tabSize": 2,
     "spellright.documentTypes": [
-        "latex",
-        "plaintext"
+        "latex"
     ],
+    "prettier.proseWrap": "always",
+    "terminal.integrated.rendererType": "dom",
+    "editor.formatOnSave": true,
+    "python.jediEnabled": false,
+    "[python]": {},
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
