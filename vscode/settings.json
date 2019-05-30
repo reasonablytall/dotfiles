@@ -52,9 +52,11 @@
     ],
     "prettier.proseWrap": "always",
     "terminal.integrated.rendererType": "dom",
-    "editor.formatOnSave": true,
     "python.jediEnabled": false,
     "[python]": {},
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
