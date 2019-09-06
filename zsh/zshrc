@@ -13,10 +13,6 @@ compinit
 
 # Alex's Configuration ------------------------------------
 
-# Allow user-level npm global installs
-PATH="$HOME/.node_modules/bin:$PATH"
-export npm_config_prefix=~/.node_modules
-
 # Install antigen if it doesn't exist
 local antigen_path="$HOME/antigen.zsh"
 if [ ! -f "$antigen_path" ]; then
@@ -25,14 +21,14 @@ fi
 source $antigen_path
 
 antigen use oh-my-zsh
-antigen bundle git
-antigen bundle pip
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle command-not-found
-antigen bundle aws
 antigen bundle docker
 antigen bundle docker-compose
+antigen bundle git
+antigen bundle pip
 antigen theme half-life
-antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
 bindkey -v
@@ -55,3 +51,7 @@ alias fehlast="find ~/Images/Screenshots | sort | tail -n 1 | xargs feh"
 if [ -f ~/.zshrc_local ]; then
   source ~/.zshrc_local
 fi
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

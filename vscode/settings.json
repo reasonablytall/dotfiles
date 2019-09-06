@@ -39,15 +39,14 @@
   "spellright.language": ["en_US"],
   "spellright.configurationScope": "user",
   "editor.tabSize": 2,
-  "spellright.documentTypes": [],
+  "spellright.documentTypes": ["latex"],
   "prettier.proseWrap": "always",
   "terminal.integrated.rendererType": "dom",
-  "editor.formatOnSave": true,
   "python.jediEnabled": false,
   "[python]": {},
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-
-  "vscode_custom_css.imports": ["file:///home/alex/.vscode/synthwave84.css"],
-  "vscode_custom_css.policy": true
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
