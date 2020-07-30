@@ -5,6 +5,8 @@ SAVEHIST=1000
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
+
+fpath=($fpath $HOME/.zfunc)
 zstyle :compinstall filename '/home/alex/.zshrc'
 
 autoload -Uz compinit
@@ -40,12 +42,12 @@ alias ll='ls -hal'
 alias l='ls -hl'
 alias gs='git status'
 alias vim='nvim'
-alias startx='ssh-agent startx'
 alias pip='echo "Nuh uh!"'
 alias supip=/usr/bin/pip
 alias clip='xclip -selection c'
 alias yay='yay --color=always'
 alias fehlast="find ~/Images/Screenshots | sort | tail -n 1 | xargs feh"
+
 
 # Load local machine configuration
 if [ -f ~/.zshrc_local ]; then
@@ -55,3 +57,4 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+source /usr/share/nvm/init-nvm.sh

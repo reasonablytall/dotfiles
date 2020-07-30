@@ -24,7 +24,7 @@ rofi.color-window: #d9d7ce,      #002b36,  #002b3600
 rofi.bw: 0
 rofi.modi: run,window,ssh
 rofi.fake-transparency: true
-rofi.font: xos4 Terminus 9
+rofi.font: xos4 Terminus:style=Bold 9
 rofi.columns: 4
 rofi.hide-scrollbar: true
 rofi.padding: 5

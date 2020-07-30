@@ -10,7 +10,7 @@
     ~/.Xresources: xorg/Xresources
     ~/.zshrc: zsh/zshrc
     ~/.tmux.conf: tmux/tmux.conf
-    ~/.config/compton.conf: compton/compton.conf
+    ~/.config/picom.conf: picom/picom.conf
     ~/.config/bspwm: bspwm
     ~/.config/sxhkd: sxhkd
     ~/.config/polybar: polybar

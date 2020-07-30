@@ -46,8 +46,8 @@ super + ctrl + {h, j, k, l}
 	bspc node focused -z {right -20 0, bottom 0 20, bottom 0 -20, right 20 0}
 
 # Move nodes between desktops
-super + shift + {1-9, 0}
-	bspc node focused -d ^{1-9, 0}
+super + shift + {1-9,0}
+	bspc node focused -d ^{1-9,0}
 
 # Rotate nodes
 super + i
